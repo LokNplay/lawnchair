@@ -48,9 +48,12 @@
     <string name="smartspace_calendar_label">Personalización del calendario de un vistazo</string>
     <string name="smartspace_calendar_description">Permitir mostrar fechas en sistemas de calendario no gregorianos.</string>
     <string name="workspace_increase_max_grid_size_label">Aumento del tamaño máximo de la cuadrícula de la pantalla de inicio</string>
-    <string name="workspace_increase_max_grid_size_description">Aumente el tamaño máximo permitido de la cuadrícula de la pantalla de inicio de 10 x 10 a 20 x 20.</string>
-    <string name="always_reload_icons_label">Recargar iconos siempre</string>
-    <string name="always_reload_icons_description">Evitar usar iconos en caché de paquetes de iconos</string>
+    <string name="workspace_increase_max_grid_size_description">Aumenta el tamaño máximo permitido de la cuadrícula de pantalla de inicio de 10 x 10 a 20 x 20.</string>
+    <string name="always_reload_icons_label">Siempre recargar los iconos</string>
+    <string name="always_reload_icons_description">Evitar el uso de iconos en caché de paquetes de iconos</string>
+    <string name="transparent_background_icons">Iconos temáticos transparentes</string>
+    <string name="transparent_background_icons_description">Usar fondo transparente en iconos temáticos</string>
+    <string name="smartspace_mode_selection">Selección de proveedores de un vistazo</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Rotación de Pantalla de Inicio</string>
     <string name="home_screen_rotaton_description">Cuando se rota el dispositivo.</string>
@@ -66,9 +69,12 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">Mostrar contador de notificaciones</string>
     <string name="notification_dots_color">Color del punto de notificación</string>
+    <string name="notification_dots_text_color">Color del contador de notificaciones</string>
+    <string name="notification_dots_color_contrast_warning_always">Advertencia: Es posible que los colores de punto &amp; contador de notificaciones no siempre tengan suficiente contraste entre sí</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">Advertencia: Es posible que los colores de punto &amp; contador de notificaciones no siempre tengan suficiente contraste entre sí</string>
     <!-- Notification popup -->
-    <string name="missing_notification_access_label">Acceso a las notificaciones requerido</string>
-    <string name="missing_notification_access_description">Acceso a las notificaciones requerido.</string>
+    <string name="missing_notification_access_label">Se necesita acceso a las notificaciones</string>
+    <string name="missing_notification_access_description">Se necesita acceso a las notificaciones.</string>
     <string name="msg_missing_notification_access">Para usar puntos de notificación, concede acceso a las notificaciones a <xliff:g id="name" example="My App">%1$s</xliff:g>.</string>
     <string name="title_change_settings">Cambiar ajustes</string>
     <string name="colors">Colores</string>
@@ -78,6 +84,23 @@
     <string name="theme_system_default">Sistema</string>
     <string name="theme_follow_wallpaper">Coincidir con fondo</string>
     <string name="accent_color">Color de acento</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">Forma de icono personalizada</string>
+    <string name="custom_icon_shape_create">Crear forma de icono personalizada</string>
+    <string name="custom_icon_shape_edit">Editar forma de icono personalizada</string>
+    <string name="icon_shape_corner">Forma de esquina</string>
+    <string name="icon_shape_corner_round">Redondo</string>
+    <string name="icon_shape_corner_squircle">Suavizado</string>
+    <string name="icon_shape_corner_cut">Cortar</string>
+    <string name="icon_shape_top_left">Superior izquierda</string>
+    <string name="icon_shape_top_right">Superior Derecha</string>
+    <string name="icon_shape_bottom_left">Inferior izquierda</string>
+    <string name="icon_shape_bottom_right">Inferior derecha</string>
+    <string name="create">Crear</string>
+    <string name="clipboard">Portapapeles</string>
+    <string name="export_to_clipboard">Exportar al portapapeles</string>
+    <string name="import_from_clipboard">Importar desde el portapapeles</string>
+    <string name="icon_shape_clipboard_import_error">El portapapeles no contiene una forma de icono válida</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">Paquete de iconos</string>
@@ -120,6 +143,7 @@
     <string name="reset_font">Restablecer</string>
     <!-- colorpreference/* -->
     <string name="dynamic">Dinámico</string>
+    <string name="swatches">Muestras</string>
     <string name="presets">Configuraciones</string>
     <string name="custom">Personalizado</string>
     <string name="rgb">RGB</string>
@@ -136,7 +160,7 @@
     <string name="action_paste">Pegar</string>
     <string name="copied_toast">Copiado al portapapeles.</string>
     <string name="invalid_color">Color no válido</string>
-    <string name="launcher_default_color">Predeterminado</string>
+    <string name="launcher_default_color">Gestionado por Lawnchair</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">Añadir Nuevas Aplicaciones a la Pantalla de Inicio</string>
@@ -165,6 +189,9 @@
     <string name="label_size">Tamaño de Etiqueta</string>
     <string name="reset_custom_icons">Restablecer iconos personalizados</string>
     <string name="reset_custom_icons_confirmation">Todos los iconos personalizados se restablecerán. ¿Desea continuar?</string>
+    <string name="home_screen_text_color">Color del texto</string>
+    <string name="color_light">Claro</string>
+    <string name="color_dark">Oscuro</string>
     <!-- <string name="widget_button_text" /> (unknown source)-->
     <string name="force_rounded_widgets">Esquinas Redondeadas</string>
     <string name="allow_widget_overlap">Permitir superposición</string>
@@ -203,10 +230,17 @@
     <string name="smartspace_preferences">Preferencias</string>
     <string name="smartspace_widget_toggle_label">Mostrar en la pantalla de inicio</string>
     <string name="smartspace_widget_toggle_description">De un vistazo se puede agregar manualmente colocando el widget \"Lawnchair\".</string>
+    <string name="smartspace_mode_label">Proveedor de un vistazo</string>
+    <string name="smartspace_mode_lawnchair">Lawnchair</string>
+    <string name="smartspace_mode_google">Google</string>
+    <string name="smartspace_mode_google_search">Búsqueda de Google</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
+    <string name="hotseat_mode_label">Widget de barra de búsqueda</string>
+    <string name="hotseat_mode_disabled">Deshabilitado</string>
+    <string name="hotseat_mode_lawnchair">Lawnchair</string>
+    <string name="hotseat_mode_google_search">Barra de búsqueda de Google</string>
     <string name="search_bar_label">Barra de Búsqueda</string>
-    <string name="hotseat_qsb_label">Mostrar Barra de Búsqueda</string>
     <string name="corner_radius_label">Radio de esquina</string>
     <string name="apply_accent_color_label">Aplicar Acento de Color</string>
     <string name="search_provider">Proveedor de Búsqueda</string>
@@ -221,8 +255,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">Aplicaciones ocultas</string>
     <string name="background_opacity">Opacidad del Fondo</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">Aplicaciones ocultas</string>
+    <string name="show_enable_smart_hide">Mostrar cuándo se escribe el nombre completo</string>
+    <string name="hide_hidden_apps_search">Ocultar en los resultados de búsqueda</string>
     <string name="pref_category_search">Buscar</string>
     <string name="show_app_search_bar">Mostrar Barra de Búsqueda</string>
     <string name="pref_search_auto_show_keyboard">Mostrar teclado automáticamente</string>

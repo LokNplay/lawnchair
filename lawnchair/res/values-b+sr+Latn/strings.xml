@@ -49,8 +49,11 @@
     <string name="smartspace_calendar_description">Omogućava prikaz datuma u kalendarskim sistemima koji nisu gregorijanski.</string>
     <string name="workspace_increase_max_grid_size_label">Veća mreža početnog ekrana</string>
     <string name="workspace_increase_max_grid_size_description">Povećava maksimalnu veličinu mreže početnog ekrana iz 10 × 10 u 20 × 20.</string>
-    <string name="always_reload_icons_label">Always Reload Icons</string>
-    <string name="always_reload_icons_description">Avoid using cached icons from icon packs</string>
+    <string name="always_reload_icons_label">Uvek učitavaj ikone iznova</string>
+    <string name="always_reload_icons_description">Izbegavaj korišćenje keširanih ikona iz paketa ikona</string>
+    <string name="transparent_background_icons">117788</string>
+    <string name="transparent_background_icons_description">Koristi prozirnu pozadinu na tematskim ikonama</string>
+    <string name="smartspace_mode_selection">Izbor dobavljača za „Kratak pregled”</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Rotacija početnog ekrana</string>
     <string name="home_screen_rotaton_description">Kada se uređaj rotira.</string>
@@ -66,6 +69,9 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">Prikazuj broj obaveštenja</string>
     <string name="notification_dots_color">Boja tačaka za obaveštenja</string>
+    <string name="notification_dots_text_color">Boja broja obaveštenja</string>
+    <string name="notification_dots_color_contrast_warning_always">Upozorenje: boje tačke i broja obaveštenja nemaju dovoljno međusobnog kontrasta</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">Upozorenje: boje tačke i broja obaveštenja možda neće uvek imati dovoljno međusobnog kontrasta</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">Pristup obaveštenjima</string>
     <string name="missing_notification_access_description">Potreban je pristup obaveštenjima.</string>
@@ -78,6 +84,23 @@
     <string name="theme_system_default">Sistemska</string>
     <string name="theme_follow_wallpaper">Na osnovu pozadine</string>
     <string name="accent_color">Boja za naglašavanje</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">Prilagođeni oblik ikona</string>
+    <string name="custom_icon_shape_create">Napravi prilagođeni oblik ikona</string>
+    <string name="custom_icon_shape_edit">Uredi prilagođeni oblik ikona</string>
+    <string name="icon_shape_corner">Oblik uglova</string>
+    <string name="icon_shape_corner_round">Okrugao</string>
+    <string name="icon_shape_corner_squircle">Uglađen</string>
+    <string name="icon_shape_corner_cut">Opsečen</string>
+    <string name="icon_shape_top_left">Gore levo</string>
+    <string name="icon_shape_top_right">Gore desno</string>
+    <string name="icon_shape_bottom_left">Dole levo</string>
+    <string name="icon_shape_bottom_right">Dole desno</string>
+    <string name="create">Napravi</string>
+    <string name="clipboard">Privremena memorija</string>
+    <string name="export_to_clipboard">Izvezi u privremenu memoriju</string>
+    <string name="import_from_clipboard">Uvezi iz privremene memorije</string>
+    <string name="icon_shape_clipboard_import_error">Privremena memorija ne sadrži važeći oblik ikona</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">Paket ikona</string>
@@ -120,6 +143,7 @@
     <string name="reset_font">Resetuj</string>
     <!-- colorpreference/* -->
     <string name="dynamic">Dinamička</string>
+    <string name="swatches">Obrasci</string>
     <string name="presets">Šabloni</string>
     <string name="custom">Prilagođena</string>
     <string name="rgb">RGB</string>
@@ -136,7 +160,7 @@
     <string name="action_paste">Nalepi</string>
     <string name="copied_toast">Kopirano u privremenu memoriju.</string>
     <string name="invalid_color">Nevažeća boja</string>
-    <string name="launcher_default_color">Podrazumevano</string>
+    <string name="launcher_default_color">Upravlja aplikacija Lawnchair</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">Dodaj nove aplikacije na početni ekran</string>
@@ -165,6 +189,9 @@
     <string name="label_size">Veličina oznaka</string>
     <string name="reset_custom_icons">Resetuj prilagođene ikone</string>
     <string name="reset_custom_icons_confirmation">Sve prilagođene ikone će se resetovati. Želite li da nastavite?</string>
+    <string name="home_screen_text_color">Boja teksta</string>
+    <string name="color_light">Svetla</string>
+    <string name="color_dark">Tamna</string>
     <!-- <string name="widget_button_text" /> (unknown source)-->
     <string name="force_rounded_widgets">Zaobljeni uglovi</string>
     <string name="allow_widget_overlap">Dozvoli preklapanje</string>
@@ -203,10 +230,17 @@
     <string name="smartspace_preferences">Podešavanja</string>
     <string name="smartspace_widget_toggle_label">Prikaži na početnom ekranu</string>
     <string name="smartspace_widget_toggle_description">„Kratak pregled” možete da dodate ručno postavljanjem vidžeta „Lawnchair”.</string>
+    <string name="smartspace_mode_label">Dobavljač za „Kratak pregled”</string>
+    <string name="smartspace_mode_lawnchair">Lawnchair</string>
+    <string name="smartspace_mode_google">Google</string>
+    <string name="smartspace_mode_google_search">Google pretraga</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
+    <string name="hotseat_mode_label">Vidžet trake za pretragu</string>
+    <string name="hotseat_mode_disabled">Onemogućeno</string>
+    <string name="hotseat_mode_lawnchair">Lawnchair</string>
+    <string name="hotseat_mode_google_search">Google traka za pretragu</string>
     <string name="search_bar_label">Okvir za pretragu</string>
-    <string name="hotseat_qsb_label">Prikaži okvir za pretragu</string>
     <string name="corner_radius_label">Radijus ugla</string>
     <string name="apply_accent_color_label">Primeni boju za naglašavanje</string>
     <string name="search_provider">Pretraživač</string>
@@ -221,8 +255,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">Skrivene aplikacije</string>
     <string name="background_opacity">Prozirnost pozadine</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">Skrivene aplikacije</string>
+    <string name="show_enable_smart_hide">Prikaži po unosu punog imena</string>
+    <string name="hide_hidden_apps_search">Sakrij u rezultatima pretrage</string>
     <string name="pref_category_search">Pretraga</string>
     <string name="show_app_search_bar">Prikaži okvir za pretragu</string>
     <string name="pref_search_auto_show_keyboard">Automatski prikazuj tastaturu</string>

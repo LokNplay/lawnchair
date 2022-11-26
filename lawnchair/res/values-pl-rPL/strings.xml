@@ -51,6 +51,9 @@
     <string name="workspace_increase_max_grid_size_description">Zwiększ maksymalny dozwolony rozmiar siatki ekranu głównego z 10 x 10 do 20 x 20.</string>
     <string name="always_reload_icons_label">Zawsze odświeżaj ikony</string>
     <string name="always_reload_icons_description">Unikaj używania buforowanych ikon z pakietów ikon</string>
+    <string name="transparent_background_icons">Przezroczyste ikony tematyczne</string>
+    <string name="transparent_background_icons_description">Użyj przezroczystego tła na ikonach tematycznych</string>
+    <string name="smartspace_mode_selection">\"W skrócie\" wybór dostawcy</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Obrót Ekranu głównego</string>
     <string name="home_screen_rotaton_description">Po obróceniu urządzenia.</string>
@@ -66,6 +69,9 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">Pokaż liczbę powiadomień</string>
     <string name="notification_dots_color">Kolor plakietek powiadomień</string>
+    <string name="notification_dots_text_color">Kolor liczby powiadomień</string>
+    <string name="notification_dots_color_contrast_warning_always">Ostrzeżenie: Kolory plakietki oraz liczby powiadomień nie różnią się wystarczająco od siebie</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">Ostrzeżenie: Kolory plakietki oraz liczby powiadomień nie zawsze mogą być wystarczająco różne od siebie</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">Wymagany dostęp do powiadomień</string>
     <string name="missing_notification_access_description">Wymagany dostęp do powiadomień.</string>
@@ -78,6 +84,23 @@
     <string name="theme_system_default">System</string>
     <string name="theme_follow_wallpaper">Dopasuj do tapety</string>
     <string name="accent_color">Kolor Akcentujący</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">Własny kształt ikony</string>
+    <string name="custom_icon_shape_create">Stwórz własny kształt ikony</string>
+    <string name="custom_icon_shape_edit">Edytuj własny kształt ikony</string>
+    <string name="icon_shape_corner">Kształt narożnika</string>
+    <string name="icon_shape_corner_round">Okrągły</string>
+    <string name="icon_shape_corner_squircle">Gładki</string>
+    <string name="icon_shape_corner_cut">Wycięty</string>
+    <string name="icon_shape_top_left">Lewy górny</string>
+    <string name="icon_shape_top_right">Prawy górny</string>
+    <string name="icon_shape_bottom_left">Lewy dolny</string>
+    <string name="icon_shape_bottom_right">Prawy dolny</string>
+    <string name="create">Utwórz</string>
+    <string name="clipboard">Schowek</string>
+    <string name="export_to_clipboard">Eksportuj do schowka</string>
+    <string name="import_from_clipboard">Importuj ze schowka</string>
+    <string name="icon_shape_clipboard_import_error">Schowek nie zawiera prawidłowego kształtu ikony</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">Paczka ikon</string>
@@ -120,6 +143,7 @@
     <string name="reset_font">Reset</string>
     <!-- colorpreference/* -->
     <string name="dynamic">Dynamiczne</string>
+    <string name="swatches">Oglądarki</string>
     <string name="presets">Ustawienia</string>
     <string name="custom">Własny</string>
     <string name="rgb">RGB</string>
@@ -136,7 +160,7 @@
     <string name="action_paste">Wklej</string>
     <string name="copied_toast">Skopiowano do schowka.</string>
     <string name="invalid_color">Nieprawidłowy kolor</string>
-    <string name="launcher_default_color">Domyślnie</string>
+    <string name="launcher_default_color">Zarządzane przez Lawnchair</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">Dodaj nowe aplikacje do ekranu głównego</string>
@@ -165,6 +189,9 @@
     <string name="label_size">Rozmiar etykiet</string>
     <string name="reset_custom_icons">Zresetuj własne ikony</string>
     <string name="reset_custom_icons_confirmation">Wszystkie własne ikony zostaną zresetowane. Czy chcesz kontynuować?</string>
+    <string name="home_screen_text_color">Kolor tekstu</string>
+    <string name="color_light">Jasny</string>
+    <string name="color_dark">Ciemny</string>
     <!-- <string name="widget_button_text" /> (unknown source)-->
     <string name="force_rounded_widgets">Zaokrąglone rogi</string>
     <string name="allow_widget_overlap">Pozwól na nakładanie się</string>
@@ -203,10 +230,17 @@
     <string name="smartspace_preferences">Ustawienia</string>
     <string name="smartspace_widget_toggle_label">Pokaż na ekranie głównym</string>
     <string name="smartspace_widget_toggle_description">\"W skrócie\" można dodać ręcznie, umieszczając widżet \"Lawnchair\".</string>
+    <string name="smartspace_mode_label">Dostawca \"W skrócie\"</string>
+    <string name="smartspace_mode_lawnchair">Lawnchair</string>
+    <string name="smartspace_mode_google">Google</string>
+    <string name="smartspace_mode_google_search">Szukaj w Google</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
+    <string name="hotseat_mode_label">Widżet paska wyszukiwania</string>
+    <string name="hotseat_mode_disabled">Wyłączono</string>
+    <string name="hotseat_mode_lawnchair">Lawnchair</string>
+    <string name="hotseat_mode_google_search">Pasek wyszukiwania Google</string>
     <string name="search_bar_label">Pasek wyszukiwania</string>
-    <string name="hotseat_qsb_label">Pokaż pasek wyszukiwania</string>
     <string name="corner_radius_label">Promień narożnika</string>
     <string name="apply_accent_color_label">Zastosuj kolor akcentujący</string>
     <string name="search_provider">Dostawca wyszukiwania</string>
@@ -221,8 +255,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">Ukryte aplikacje</string>
     <string name="background_opacity">Przezroczystość tła</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">Ukryte aplikacje</string>
+    <string name="show_enable_smart_hide">Pokaż, gdy pełna nazwa jest wpisana</string>
+    <string name="hide_hidden_apps_search">Ukryj w wynikach wyszukiwania</string>
     <string name="pref_category_search">Szukaj</string>
     <string name="show_app_search_bar">Pokaż pasek wyszukiwania</string>
     <string name="pref_search_auto_show_keyboard">Automatycznie pokazuj klawiaturę</string>

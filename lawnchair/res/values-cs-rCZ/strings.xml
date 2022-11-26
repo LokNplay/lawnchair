@@ -51,6 +51,9 @@
     <string name="workspace_increase_max_grid_size_description">Zvýšit maximální povolenou velikost mřížky domovské obrazovky z 10 x 10 x 20 x 20.</string>
     <string name="always_reload_icons_label">Vždy znovu načíst ikony</string>
     <string name="always_reload_icons_description">Vyhnout se používání uložených ikon z balíčků ikon</string>
+    <string name="transparent_background_icons">Ikony s průhledným tématem</string>
+    <string name="transparent_background_icons_description">Použít průhledné pozadí u ikon s tématem</string>
+    <string name="smartspace_mode_selection">Výběr poskytovatele glancu</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Otáčení domovské obrazovky</string>
     <string name="home_screen_rotaton_description">Při otočení zařízení.</string>
@@ -66,6 +69,9 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">Zobrazit počet oznámení</string>
     <string name="notification_dots_color">Barva notifikačních bodů</string>
+    <string name="notification_dots_text_color">Barva puntíku notifikačního počítadla</string>
+    <string name="notification_dots_color_contrast_warning_always">Upozornění: Barva notifikačního puntíku a textu notifikačního počítadla nejsou navzájem dostatečně kontrastní</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">Upozornění: Barva notifikačního puntíku a textu notifikačního počítadla nemusí být vždy navzájem dostatečně kontrastní</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">Je vyžadován přístup k oznámením</string>
     <string name="missing_notification_access_description">Je vyžadován přístup k oznámením.</string>
@@ -78,6 +84,23 @@
     <string name="theme_system_default">Systém</string>
     <string name="theme_follow_wallpaper">Vybráno z tapety</string>
     <string name="accent_color">Barva odstínu</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">Vlastní tvar ikon</string>
+    <string name="custom_icon_shape_create">Vytvořit vlastní tvar ikon</string>
+    <string name="custom_icon_shape_edit">Upravit vlastní tvar ikon</string>
+    <string name="icon_shape_corner">Tvar rohů</string>
+    <string name="icon_shape_corner_round">Kulatý</string>
+    <string name="icon_shape_corner_squircle">Hladký</string>
+    <string name="icon_shape_corner_cut">Oříznutý</string>
+    <string name="icon_shape_top_left">Vlevo nahoře</string>
+    <string name="icon_shape_top_right">Vpravo nahoře</string>
+    <string name="icon_shape_bottom_left">Vlevo dole</string>
+    <string name="icon_shape_bottom_right">Vpravo dole</string>
+    <string name="create">Vytvořit</string>
+    <string name="clipboard">Schránka</string>
+    <string name="export_to_clipboard">Exportovat do schránky</string>
+    <string name="import_from_clipboard">Importovat ze schránky</string>
+    <string name="icon_shape_clipboard_import_error">Schránka neobsahuje platný tvar ikony</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">Sada ikon</string>
@@ -120,6 +143,7 @@
     <string name="reset_font">Obnovit</string>
     <!-- colorpreference/* -->
     <string name="dynamic">Dynamická</string>
+    <string name="swatches">Vzorníky</string>
     <string name="presets">Předvolby</string>
     <string name="custom">Vlastní</string>
     <string name="rgb">RGB</string>
@@ -136,7 +160,7 @@
     <string name="action_paste">Vložit</string>
     <string name="copied_toast">Zkopírováno do schránky.</string>
     <string name="invalid_color">Neplatná barva</string>
-    <string name="launcher_default_color">Výchozí</string>
+    <string name="launcher_default_color">Spravováno aplikací Lawnchair</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">Přidat nové aplikace na plochu</string>
@@ -165,6 +189,9 @@
     <string name="label_size">Velikost popisku</string>
     <string name="reset_custom_icons">Obnovit vlastní ikony</string>
     <string name="reset_custom_icons_confirmation">Všechny vlastní ikony budou obnoveny. Přejete si pokračovat?</string>
+    <string name="home_screen_text_color">Barva textu</string>
+    <string name="color_light">Světlé</string>
+    <string name="color_dark">Tmavé</string>
     <!-- <string name="widget_button_text" /> (unknown source)-->
     <string name="force_rounded_widgets">Zaoblené rohy</string>
     <string name="allow_widget_overlap">Povolit překrývání</string>
@@ -203,10 +230,17 @@
     <string name="smartspace_preferences">Předvolby</string>
     <string name="smartspace_widget_toggle_label">Zobrazit na domovské obrazovce</string>
     <string name="smartspace_widget_toggle_description">Glanc je možné ručně přidat umístěním widgetu \"Lawnchair\".</string>
+    <string name="smartspace_mode_label">Poskytovatel glancu</string>
+    <string name="smartspace_mode_lawnchair">Lawnchair</string>
+    <string name="smartspace_mode_google">Google</string>
+    <string name="smartspace_mode_google_search">Vyhledávání Google</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
+    <string name="hotseat_mode_label">Widget vyhledávacího panelu</string>
+    <string name="hotseat_mode_disabled">Zakázáno</string>
+    <string name="hotseat_mode_lawnchair">Lawnchair</string>
+    <string name="hotseat_mode_google_search">Vyhledávání Google</string>
     <string name="search_bar_label">Vyhledávací lišta</string>
-    <string name="hotseat_qsb_label">Zobrazit vyhledávací lištu</string>
     <string name="corner_radius_label">Poloměr rohů</string>
     <string name="apply_accent_color_label">Použít zvýrazňující barvu</string>
     <string name="search_provider">Poskytovatel vyhledávání</string>
@@ -221,8 +255,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">Skryté aplikace</string>
     <string name="background_opacity">Průhlednost pozadí</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">Skryté aplikace</string>
+    <string name="show_enable_smart_hide">Zobrazit při napsání celého jména</string>
+    <string name="hide_hidden_apps_search">Skrýt ve výsledcích vyhledávání</string>
     <string name="pref_category_search">Vyhledávání</string>
     <string name="show_app_search_bar">Zobrazit vyhledávací lištu</string>
     <string name="pref_search_auto_show_keyboard">Automaticky zobrazit klávesnici</string>

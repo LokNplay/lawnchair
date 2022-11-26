@@ -51,6 +51,9 @@
     <string name="workspace_increase_max_grid_size_description">Αυξήστε το μέγιστο επιτρεπόμενο μέγεθος πλέγματος Αρχικής Οθόνης από 10×10 έως 20×20.</string>
     <string name="always_reload_icons_label">Να γίνεται πάντοτε Επαναφόρτωση Εικονιδίων</string>
     <string name="always_reload_icons_description">Αποφυγή χρήσης αποθηκευμένων εικονιδίων από πακέτα εικονιδίων</string>
+    <string name="transparent_background_icons">Διαφανή Θεματοποιημένα Εικονίδια</string>
+    <string name="transparent_background_icons_description">Χρήση διαφανούς φόντου στα θεματοποιημένα εικονίδια</string>
+    <string name="smartspace_mode_selection">Επιλογή παρόχου γραφικού \"Με μια Ματιά\"</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Περιστροφή Αρχικής Οθόνης</string>
     <string name="home_screen_rotaton_description">Όταν η συσκευή περιστρέφεται.</string>
@@ -66,6 +69,9 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">Εμφάνιση Πλήθους Ειδοποιήσεων</string>
     <string name="notification_dots_color">Χρώμα Κουκκίδας Ειδοποιήσεων</string>
+    <string name="notification_dots_text_color">Χρώμα Κουκκίδας Ειδοποιήσεων</string>
+    <string name="notification_dots_color_contrast_warning_always">Προσοχή: Τα χρώματα των Κουκκίδων Ειδοποιήσεων &amp; του Πλήθους Ειδοποιήσεων δεν έχουν αρκετή αντίθεση μεταξύ τους</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">Προσοχή: Τα χρώματα των Κουκκίδων Ειδοποιήσεων &amp; του Πλήθους Ειδοποιήσεων ίσως δεν έχουν πάντα αρκετή αντίθεση μεταξύ τους</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">Απαιτείται Πρόσβαση Ειδοποιήσεων</string>
     <string name="missing_notification_access_description">Απαιτείται Πρόσβαση Ειδοποιήσεων.</string>
@@ -78,6 +84,23 @@
     <string name="theme_system_default">Σύστημα</string>
     <string name="theme_follow_wallpaper">Ταίριασμα Ταπετσαρίας</string>
     <string name="accent_color">Χρώμα Έμφασης</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">Προσαρμοσμένο Σχήμα Εικονιδίου</string>
+    <string name="custom_icon_shape_create">Δημιουργία Προσαρμοσμένου Σχήματος Εικονιδίου</string>
+    <string name="custom_icon_shape_edit">Επεξεργασία Προσαρμοσμένου Σχήματος Εικονιδίου</string>
+    <string name="icon_shape_corner">Σχήμα Γωνίας</string>
+    <string name="icon_shape_corner_round">Στρογγυλό</string>
+    <string name="icon_shape_corner_squircle">Λείο</string>
+    <string name="icon_shape_corner_cut">Κοφτό</string>
+    <string name="icon_shape_top_left">Πάνω Αριστερά</string>
+    <string name="icon_shape_top_right">Πάνω Δεξιά</string>
+    <string name="icon_shape_bottom_left">Κάτω Αριστερά</string>
+    <string name="icon_shape_bottom_right">Κάτω Δεξιά</string>
+    <string name="create">Δημιουργία</string>
+    <string name="clipboard">Πρόχειρο</string>
+    <string name="export_to_clipboard">Εξαγωγή στο Πρόχειρο</string>
+    <string name="import_from_clipboard">Εισαγωγή από το Πρόχειρο</string>
+    <string name="icon_shape_clipboard_import_error">Το Πρόχειρο δεν περιέχει ένα έγκυρο σχήμα εικονιδίου</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">Πακέτο Εικονιδίων</string>
@@ -120,6 +143,7 @@
     <string name="reset_font">Επαναφορά</string>
     <!-- colorpreference/* -->
     <string name="dynamic">Δυναμικό</string>
+    <string name="swatches">Δείγματα</string>
     <string name="presets">Προεπιλογές</string>
     <string name="custom">Προσαρμοσμένο</string>
     <string name="rgb">RGB</string>
@@ -136,7 +160,7 @@
     <string name="action_paste">Επικόλληση</string>
     <string name="copied_toast">Αντιγράφηκε στο πρόχειρο.</string>
     <string name="invalid_color">Μη Έγκυρο Χρώμα</string>
-    <string name="launcher_default_color">Προεπιλογή</string>
+    <string name="launcher_default_color">Διαχειριζόμενο από τον εκκινητή Lawnchair</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">Προσθήκη Nέων Eφαρμογών Στην Αρχική Οθόνη</string>
@@ -165,6 +189,9 @@
     <string name="label_size">Μέγεθος Ετικέτας</string>
     <string name="reset_custom_icons">Επαναφορά Προσαρμοσμένων Εικονιδίων</string>
     <string name="reset_custom_icons_confirmation">Θα γίνει επαναφορά όλων των προσαρμοσμένων εικονιδίων. Θέλετε να συνεχίσετε;</string>
+    <string name="home_screen_text_color">Χρώμα Κειμένου</string>
+    <string name="color_light">Ελαφριά γραμματοσειρά</string>
+    <string name="color_dark">Σκοτεινό</string>
     <!-- <string name="widget_button_text" /> (unknown source)-->
     <string name="force_rounded_widgets">Στρογγυλές Γωνίες</string>
     <string name="allow_widget_overlap">Να επιτρέπεται η Επικάλυψη</string>
@@ -203,10 +230,17 @@
     <string name="smartspace_preferences">Προτιμήσεις</string>
     <string name="smartspace_widget_toggle_label">Εμφάνιση στην Αρχική Οθόνη</string>
     <string name="smartspace_widget_toggle_description">Το γραφικό στοιχείο \"Με μια Ματιά\" μπορεί να προστεθεί χειροκίνητα τοποθετώντας το γραφικό με ονομασία \"Lawnchair\".</string>
+    <string name="smartspace_mode_label">Πάροχος γραφικού \"Με μια Ματιά\"</string>
+    <string name="smartspace_mode_lawnchair">Εκκινητής Lawnchair</string>
+    <string name="smartspace_mode_google">Google</string>
+    <string name="smartspace_mode_google_search">Αναζήτηση Google</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
+    <string name="hotseat_mode_label">Γραφικό Μπάρας Αναζήτησης</string>
+    <string name="hotseat_mode_disabled">Απενεργοποιημένο</string>
+    <string name="hotseat_mode_lawnchair">Εκκινητής Lawnchair</string>
+    <string name="hotseat_mode_google_search">Μπάρα Αναζήτησης Google</string>
     <string name="search_bar_label">Μπάρα Αναζήτησης</string>
-    <string name="hotseat_qsb_label">Εμφάνιση Γραμμής Αναζήτησης</string>
     <string name="corner_radius_label">Ακτίνα Γωνίας</string>
     <string name="apply_accent_color_label">Εφαρμογή Χρώματος Έμφασης</string>
     <string name="search_provider">Πάροχος Αναζήτησης</string>
@@ -221,8 +255,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">Κρυμμένες Εφαρμογές</string>
     <string name="background_opacity">Αδιαφάνεια Φόντου</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">Κρυμμένες Εφαρμογές</string>
+    <string name="show_enable_smart_hide">Εμφάνιση όταν πληκτρολογείται το Πλήρες Όνομα</string>
+    <string name="hide_hidden_apps_search">Απόκρυψη στα Αποτελέσματα Αναζήτησης</string>
     <string name="pref_category_search">Αναζήτηση</string>
     <string name="show_app_search_bar">Εμφάνιση Γραμμής Αναζήτησης</string>
     <string name="pref_search_auto_show_keyboard">Αυτόματη Εμφάνιση Πληκτρολογίου</string>

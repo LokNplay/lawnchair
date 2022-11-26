@@ -49,8 +49,11 @@
     <string name="smartspace_calendar_description">允许显示非公历日期</string>
     <string name="workspace_increase_max_grid_size_label">提高主屏幕最大网格大小</string>
     <string name="workspace_increase_max_grid_size_description">将最大允许的主屏幕网格大小从10 x 10增加到20x 20。</string>
-    <string name="always_reload_icons_label">Always Reload Icons</string>
-    <string name="always_reload_icons_description">Avoid using cached icons from icon packs</string>
+    <string name="always_reload_icons_label">总是重新加载图标</string>
+    <string name="always_reload_icons_description">避免在图标包中使用缓存图标</string>
+    <string name="transparent_background_icons">透明的主题图标</string>
+    <string name="transparent_background_icons_description">在主题图标上使用透明背景</string>
+    <string name="smartspace_mode_selection">资讯一览提供者选择</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">主屏幕旋转</string>
     <string name="home_screen_rotaton_description">当设备旋转时</string>
@@ -66,6 +69,9 @@
     <!-- <string name="notification_dots" />-->
     <string name="show_notification_count">显示通知计数</string>
     <string name="notification_dots_color">通知圆点颜色</string>
+    <string name="notification_dots_text_color">通知计数颜色</string>
+    <string name="notification_dots_color_contrast_warning_always">警告: 通知点 &amp; 计数器颜色之间没有足够的对比度</string>
+    <string name="notification_dots_color_contrast_warning_sometimes">警告: 通知点 &amp; 计数器颜色可能不总是有足够的对比度</string>
     <!-- Notification popup -->
     <string name="missing_notification_access_label">需要通知权限</string>
     <string name="missing_notification_access_description">需要通知权限。</string>
@@ -78,6 +84,23 @@
     <string name="theme_system_default">系统</string>
     <string name="theme_follow_wallpaper">匹配壁纸</string>
     <string name="accent_color">强调颜色</string>
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">自定义图标形状</string>
+    <string name="custom_icon_shape_create">创建自定义图标形状</string>
+    <string name="custom_icon_shape_edit">编辑自定义图标形状</string>
+    <string name="icon_shape_corner">边角形状</string>
+    <string name="icon_shape_corner_round">圆形</string>
+    <string name="icon_shape_corner_squircle">平滑的</string>
+    <string name="icon_shape_corner_cut">剪切</string>
+    <string name="icon_shape_top_left">左上角</string>
+    <string name="icon_shape_top_right">右上角</string>
+    <string name="icon_shape_bottom_left">左下角</string>
+    <string name="icon_shape_bottom_right">右下角</string>
+    <string name="create">创建</string>
+    <string name="clipboard">剪贴板</string>
+    <string name="export_to_clipboard">导出到剪贴板</string>
+    <string name="import_from_clipboard">从剪贴板导入</string>
+    <string name="icon_shape_clipboard_import_error">剪贴板没有包含有效的图标形状</string>
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
     <string name="icon_pack">图标包</string>
@@ -93,10 +116,10 @@
     <string name="icon_shape_system">系统</string>
     <string name="icon_shape_circle">圆形</string>
     <string name="icon_shape_cylinder">圆柱形</string>
-    <string name="icon_shape_diamond">Diamond</string>
-    <string name="icon_shape_egg">Egg</string>
+    <string name="icon_shape_diamond">菱形</string>
+    <string name="icon_shape_egg">鹅卵石形</string>
     <string name="icon_shape_cupertino">iOS</string>
-    <string name="icon_shape_octagon">Octagon</string>
+    <string name="icon_shape_octagon">八边形</string>
     <string name="icon_shape_sammy">One UI</string>
     <string name="icon_shape_rounded_square">圆角方形</string>
     <string name="icon_shape_sharp_square">尖锐方形</string>
@@ -120,6 +143,7 @@
     <string name="reset_font">重置</string>
     <!-- colorpreference/* -->
     <string name="dynamic">动态的</string>
+    <string name="swatches">色调</string>
     <string name="presets">预设</string>
     <string name="custom">自定义</string>
     <string name="rgb">RGB</string>
@@ -136,7 +160,7 @@
     <string name="action_paste">粘贴</string>
     <string name="copied_toast">已复制到剪切板。</string>
     <string name="invalid_color">无效颜色</string>
-    <string name="launcher_default_color">默认</string>
+    <string name="launcher_default_color">由 Lawnchair 管理</string>
     <!-- HomeScreenPreferences -->
     <!-- <string name="general_label" /> -->
     <string name="auto_add_shortcuts_label">向主屏幕添加新应用</string>
@@ -165,6 +189,9 @@
     <string name="label_size">标签大小</string>
     <string name="reset_custom_icons">重置自定义图标</string>
     <string name="reset_custom_icons_confirmation">所有自定义图标将被重置。您想要继续吗？</string>
+    <string name="home_screen_text_color">文本颜色</string>
+    <string name="color_light">浅色</string>
+    <string name="color_dark">深色</string>
     <!-- <string name="widget_button_text" /> (unknown source)-->
     <string name="force_rounded_widgets">圆角</string>
     <string name="allow_widget_overlap">允许重叠</string>
@@ -203,10 +230,17 @@
     <string name="smartspace_preferences">首选项</string>
     <string name="smartspace_widget_toggle_label">在主屏幕上显示</string>
     <string name="smartspace_widget_toggle_description">资讯一览可以通过放置“Lawnchair”小部件手动添加。</string>
+    <string name="smartspace_mode_label">资讯一览提供商</string>
+    <string name="smartspace_mode_lawnchair">Lawnchair</string>
+    <string name="smartspace_mode_google">Google</string>
+    <string name="smartspace_mode_google_search">Google 搜索</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
+    <string name="hotseat_mode_label">搜索栏小部件</string>
+    <string name="hotseat_mode_disabled">已禁用</string>
+    <string name="hotseat_mode_lawnchair">Lawnchair</string>
+    <string name="hotseat_mode_google_search">Google 搜索栏</string>
     <string name="search_bar_label">搜索栏</string>
-    <string name="hotseat_qsb_label">显示搜索栏</string>
     <string name="corner_radius_label">圆角半径</string>
     <string name="apply_accent_color_label">使用强调色</string>
     <string name="search_provider">搜索提供商</string>
@@ -221,8 +255,11 @@
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-    <string name="hidden_apps_label">隐藏的应用</string>
     <string name="background_opacity">背景不透明度</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">隐藏的应用</string>
+    <string name="show_enable_smart_hide">在输入全名时显示</string>
+    <string name="hide_hidden_apps_search">在搜索结果中隐藏</string>
     <string name="pref_category_search">搜索</string>
     <string name="show_app_search_bar">显示搜索栏</string>
     <string name="pref_search_auto_show_keyboard">自动显示键盘</string>

@@ -87,6 +87,7 @@ fun GeneralPreferences() {
     val iconShapeSubtitle = iconShapeEntries(context)
         .firstOrNull { it.value == iconShapeAdapter.state.value }
         ?.label?.invoke()
+        ?: stringResource(id = R.string.custom)
 
     PreferenceLayout(label = stringResource(id = R.string.general_label)) {
         PreferenceGroup {
@@ -105,6 +106,7 @@ fun GeneralPreferences() {
         }
 
         val wrapAdaptiveIcons = prefs.wrapAdaptiveIcons.getAdapter()
+        val transparentIconBackground = prefs.transparentIconBackground.getAdapter()
         PreferenceGroup(
             heading = stringResource(id = R.string.icons),
             description = stringResource(id = (R.string.adaptive_icon_background_description)),
@@ -115,6 +117,13 @@ fun GeneralPreferences() {
                 destination = subRoute(name = GeneralRoutes.ICON_PACK),
                 subtitle = iconStyleSubtitle,
             )
+            ExpandAndShrink(visible = themedIconsEnabled) {
+                SwitchPreference(
+                    adapter = prefs.transparentIconBackground.getAdapter(),
+                    label = stringResource(id = R.string.transparent_background_icons),
+                    description = stringResource(id = R.string.transparent_background_icons_description),
+                )
+            }
             NavigationActionPreference(
                 label = stringResource(id = R.string.icon_shape_label),
                 destination = subRoute(name = GeneralRoutes.ICON_SHAPE),
@@ -128,6 +137,7 @@ fun GeneralPreferences() {
                 label = stringResource(id = R.string.auto_adaptive_icons_label),
                 description = stringResource(id = R.string.auto_adaptive_icons_description),
             )
+
             ExpandAndShrink(visible = wrapAdaptiveIcons.state.value) {
                 SliderPreference(
                     label = stringResource(id = R.string.background_lightness_label),
@@ -141,10 +151,7 @@ fun GeneralPreferences() {
 
         PreferenceGroup(heading = stringResource(id = R.string.colors)) {
             ThemePreference()
-            ColorPreference(
-                preference = prefs2.accentColor,
-                label = stringResource(id = R.string.accent_color),
-            )
+            ColorPreference(preference = prefs2.accentColor)
         }
 
         PreferenceGroup(heading = stringResource(id = R.string.notification_dots)) {
@@ -153,20 +160,14 @@ fun GeneralPreferences() {
             NotificationDotsPreference(enabled = enabled, serviceEnabled = serviceEnabled)
             if (enabled && serviceEnabled) {
                 val showNotificationCountAdapter = prefs2.showNotificationCount.getAdapter()
-                ColorPreference(
-                    preference = prefs2.notificationDotColor,
-                    label = stringResource(id = R.string.notification_dots_color),
-                )
+                ColorPreference(preference = prefs2.notificationDotColor)
                 SwitchPreference(
                     adapter = showNotificationCountAdapter,
                     label = stringResource(id = R.string.show_notification_count),
                 )
                 ExpandAndShrink(visible = showNotificationCountAdapter.state.value) {
                     DividerColumn {
-                        ColorPreference(
-                            preference = prefs2.notificationDotTextColor,
-                            label = stringResource(id = R.string.notification_dots_text_color),
-                        )
+                        ColorPreference(preference = prefs2.notificationDotTextColor)
                         NotificationDotColorContrastWarnings(
                             dotColor = prefs2.notificationDotColor.asState().value,
                             dotTextColor = prefs2.notificationDotTextColor.asState().value,

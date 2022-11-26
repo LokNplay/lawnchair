@@ -41,6 +41,10 @@ fun ExperimentalFeaturesPreferences() {
                 label = stringResource(id = R.string.always_reload_icons_label),
                 description = stringResource(id = R.string.always_reload_icons_description),
             )
+            SwitchPreference(
+                adapter = prefs2.smartspaceModeSelection.getAdapter(),
+                label = stringResource(id = R.string.smartspace_mode_selection),
+            )
         }
     }
 }

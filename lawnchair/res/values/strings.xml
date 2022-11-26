@@ -46,7 +46,7 @@
     <string name="app_info_drop_target_label">App Info</string>
     <string name="debug_restart_launcher">Restart Lawnchair</string>
     <string name="experimental_features_label">Experimental Features</string>
-    
+
     <!-- ExperimentalFeaturesPreferences -->
     <!-- <string name="experimental_features_label" />-->
     <string name="font_picker_label">Font Customization</string>
@@ -57,6 +57,9 @@
     <string name="workspace_increase_max_grid_size_description">Increase the max allowed Home Screen grid size from 10 x 10 to 20 x 20.</string>
     <string name="always_reload_icons_label">Always Reload Icons</string>
     <string name="always_reload_icons_description">Avoid using cached icons from icon packs</string>
+    <string name="transparent_background_icons">Transparent Themed Icons</string>
+    <string name="transparent_background_icons_description">Use transparent background on themed icons</string>
+    <string name="smartspace_mode_selection">At a Glance Provider selection</string>
 
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Home Screen Rotation</string>
@@ -92,6 +95,24 @@
       <string name="theme_system_default">System</string>
       <string name="theme_follow_wallpaper">Match Wallpaper</string>
       <string name="accent_color">Accent Color</string>
+
+    <!-- CustomIconShapePreference -->
+    <string name="custom_icon_shape">Custom Icon Shape</string>
+    <string name="custom_icon_shape_create">Create Custom Icon Shape</string>
+    <string name="custom_icon_shape_edit">Edit Custom Icon Shape</string>
+    <string name="icon_shape_corner">Corner Shape</string>
+    <string name="icon_shape_corner_round">Round</string>
+    <string name="icon_shape_corner_squircle">Smooth</string>
+    <string name="icon_shape_corner_cut">Cut</string>
+    <string name="icon_shape_top_left">Top Left</string>
+    <string name="icon_shape_top_right">Top Right</string>
+    <string name="icon_shape_bottom_left">Bottom Left</string>
+    <string name="icon_shape_bottom_right">Bottom Right</string>
+    <string name="create">Create</string>
+    <string name="clipboard">Clipboard</string>
+    <string name="export_to_clipboard">Export to Clipboard</string>
+    <string name="import_from_clipboard">Import from Clipboard</string>
+    <string name="icon_shape_clipboard_import_error">Clipboard does not contain a valid icon shape</string>
 
     <!-- IconPackPreferences -->
     <!-- <string name="icon_style" /> -->
@@ -138,11 +159,12 @@
     <string name="font_weight_bold">Bold</string>
     <string name="font_weight_extra_bold">Extra Bold</string>
     <string name="font_weight_extra_black">Black</string>
-    
+
     <string name="reset_font">Reset</string>
 
     <!-- colorpreference/* -->
     <string name="dynamic">Dynamic</string>
+    <string name="swatches">Swatches</string>
     <string name="presets">Presets</string>
     <string name="custom">Custom</string>
     <string name="rgb">RGB</string>
@@ -193,7 +215,11 @@
 
       <string name="reset_custom_icons">Reset Custom Icons</string>
       <string name="reset_custom_icons_confirmation">All custom icons will be reset. Do you want to continue?</string>
-    
+
+    <string name="home_screen_text_color">Text Color</string>
+    <string name="color_light">Light</string>
+    <string name="color_dark">Dark</string>
+
     <!-- <string name="widget_button_text" /> (unknown source)-->
       <string name="force_rounded_widgets">Rounded Corners</string>
       <string name="allow_widget_overlap">Allow Overlap</string>
@@ -246,11 +272,19 @@
 
     <string name="smartspace_widget_toggle_label">Show on Home Screen</string>
     <string name="smartspace_widget_toggle_description">At a Glance can be manually added by placing the "Lawnchair" widget.</string>
-    
+
+    <string name="smartspace_mode_label">At a Glance Provider</string>
+    <string name="smartspace_mode_lawnchair">Lawnchair</string>
+    <string name="smartspace_mode_google">Google</string>
+    <string name="smartspace_mode_google_search">Google Search</string>
+
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
-    <string name="search_bar_label">Search Bar</string>
-      <string name="hotseat_qsb_label">Show Search Bar</string>
+    <string name="hotseat_mode_label">Search Bar Widget</string>
+      <string name="hotseat_mode_disabled">Disabled</string>
+      <string name="hotseat_mode_lawnchair">Lawnchair</string>
+      <string name="hotseat_mode_google_search">Google Search Bar</string>
+      <string name="search_bar_label">Search Bar</string>
       <string name="corner_radius_label">Corner Radius</string>
       <string name="apply_accent_color_label">Apply Accent Color</string>
       <string name="search_provider">Search Provider</string>
@@ -268,15 +302,20 @@
     <string name="search_provider_presearch" translatable="false">Presearch</string>
     <string name="search_provider_bing" translatable="false">Bing</string>
     <string name="search_provider_sesame" translatable="false">Sesame</string>
+    <string name="search_provider_brave" translatable="false">Brave</string>
+    <string name="search_provider_github" translatable="false">GitHub</string>
     <string name="app_label">App</string>
     <string name="website_label">Website</string>
     <string name="qsb_search_provider_app_required">App required.</string>
-    
+
     <!-- AppDrawerPrefences -->
     <!-- app_drawer_label -->
     <!-- general_label -->
-      <string name="hidden_apps_label">Hidden Apps</string> 
       <string name="background_opacity">Background Opacity</string>
+    <!-- hiddenApps_label -->
+    <string name="hidden_apps_label">Hidden Apps</string>
+    <string name="show_enable_smart_hide">Show when Full Name is Typed</string>
+    <string name="hide_hidden_apps_search">Hide in Search Results</string>
 
     <string name="pref_category_search">Search</string>
       <string name="show_app_search_bar">Show Search Bar</string>
@@ -287,7 +326,7 @@
     <!-- <string name="grid" /> -->
       <string name="app_drawer_columns">App Drawer Columns</string>
       <string name="row_height_label">Row Height</string>
-    
+
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -311,7 +350,7 @@
     <!-- <string name="grid" /> -->
     <string name="max_folder_columns">Max. Folder Columns</string>
     <string name="max_folder_rows">Max. Folder Rows</string>
-    
+
     <!-- GesturePreference -->
     <!-- <string name="gestures_label" /> -->
     <string name="gesture_double_tap">Double Tap</string>
@@ -341,7 +380,7 @@
       <string name="action_share">Share</string>
       <string name="action_lens">Lens</string>
       <string name="recents_clear_all">Clear All</string>
-      
+
     <string name="window_corner_radius_label">Screen Corner Radius</string>
       <string name="override_window_corner_radius_label">Custom Screen Corner Radius</string>
       <string name="window_corner_radius_description">When you swipe up to open Recents, the current app follows your finger, shrinking into a card. Use this slider to adjust the corner radius of the card when it’s nearly full-screen such that it matches the corners of your screen.</string>
@@ -355,7 +394,7 @@
     <string name="twitter" translatable="false">Twitter</string>
     <string name="github" translatable="false">GitHub</string>
     <string name="discord" translatable="false">Discord</string>
-    
+
     <string name="product">Product</string>
       <string name="design_and_development">Design &amp; Development</string>
       <string name="development">Development</string>
